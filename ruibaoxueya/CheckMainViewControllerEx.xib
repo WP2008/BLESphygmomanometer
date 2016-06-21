@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckMainViewController">
+            <connections>
+                <outlet property="mBg" destination="aeZ-fC-Zb1" id="KNH-l2-76a"/>
+                <outlet property="mBtnCheck" destination="NTf-k1-Vap" id="tpg-Vx-GLI"/>
+                <outlet property="mDianLingbg" destination="H1M-B5-ZGj" id="Ll4-3y-sDd"/>
+                <outlet property="mDingLing" destination="ZSd-A0-XuV" id="Gbe-JC-q5W"/>
+                <outlet property="mLevel" destination="avQ-ba-TBb" id="OQj-aS-nkI"/>
+                <outlet property="mLink" destination="xEZ-d9-ID4" id="Zbd-Pf-v6m"/>
+                <outlet property="mShouSuoYa" destination="68N-Ps-QB4" id="NMm-6i-HWU"/>
+                <outlet property="mShouSuoYaUnit" destination="gbg-Td-1Q7" id="Ouo-pE-sUC"/>
+                <outlet property="mShuZhangYa" destination="HJK-oR-2eD" id="jHT-IJ-Kfh"/>
+                <outlet property="mShuZhangYaUint" destination="d3w-Ae-aPb" id="ika-od-E4B"/>
+                <outlet property="mTitle" destination="uRP-QJ-mOR" id="bii-OR-JmZ"/>
+                <outlet property="mXinLv" destination="v6R-1h-i3Z" id="P0K-Rg-7vp"/>
+                <outlet property="mXinLvUnit" destination="HEE-Xk-nMZ" id="6eu-81-BNF"/>
+                <outlet property="mXinTiao" destination="D2R-Wd-Drd" id="Naf-QT-upR"/>
+                <outlet property="mXiuDaiYa" destination="FME-KG-XYd" id="jOg-Dh-xrD"/>
+                <outlet property="mchongdianbg" destination="edM-1Z-C0l" id="lcH-LF-Ioi"/>
+                <outlet property="mlink" destination="iKK-OC-gb0" id="c9e-pN-cGD"/>
+                <outlet property="mlunpanbg" destination="aQO-nV-SKR" id="vpN-46-PfK"/>
+                <outlet property="mpercent" destination="tpJ-JD-i04" id="BW0-XC-8Jv"/>
+                <outlet property="mqiyabg" destination="Sne-iu-rrl" id="3aB-DE-Www"/>
+                <outlet property="mrecordbg" destination="XlR-8n-sbY" id="2Qd-uk-W97"/>
+                <outlet property="view" destination="z2B-95-U9U" id="KLg-ZM-QSF"/>
+            </connections>
+        </placeholder>
+        <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z2B-95-U9U">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="572"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-fC-Zb1">
+                    <rect key="frame" x="0.0" y="-5" width="320" height="605"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_bgex.png" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-6o-76W">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                </imageView>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lw-NH-1KE">
+                    <rect key="frame" x="10" y="25" width="24" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="btn_close.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_close:" destination="-1" eventType="touchUpInside" id="rtM-YH-Cco"/>
+                    </connections>
+                </button>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="测量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-QJ-mOR">
+                    <rect key="frame" x="104" y="22" width="133" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEg-9b-gZF">
+                    <rect key="frame" x="285" y="25" width="24" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="btn_check.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_biancheng:" destination="-1" eventType="touchUpInside" id="oBd-D7-UPJ"/>
+                    </connections>
+                </button>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_check_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-4G-fzR">
+                    <rect key="frame" x="0.0" y="62" width="320" height="510"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check_record_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XlR-8n-sbY">
+                    <rect key="frame" x="0.0" y="62" width="320" height="106"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lunpan0.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQO-nV-SKR">
+                    <rect key="frame" x="86" y="195" width="153" height="135"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_check_qiya.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-iu-rrl">
+                    <rect key="frame" x="61" y="154" width="206" height="206"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收缩压" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbg-Td-1Q7">
+                    <rect key="frame" x="23" y="68" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="舒张压" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-Ae-aPb">
+                    <rect key="frame" x="133" y="68" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="心率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEE-Xk-nMZ">
+                    <rect key="frame" x="231" y="68" width="69" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68N-Ps-QB4">
+                    <rect key="frame" x="10" y="101" width="76" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-oR-2eD">
+                    <rect key="frame" x="124" y="101" width="76" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6R-1h-i3Z">
+                    <rect key="frame" x="222" y="101" width="76" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FME-KG-XYd">
+                    <rect key="frame" x="103" y="204" width="123" height="91"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                    <color key="textColor" red="0.21960784310000001" green="0.3294117647" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="理想" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-ba-TBb">
+                    <rect key="frame" x="133" y="250" width="53" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-k1-Vap">
+                    <rect key="frame" x="115" y="398" width="110" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="启动测量" backgroundImage="btn_start.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_check:" destination="-1" eventType="touchUpInside" id="1pl-HO-tsw"/>
+                    </connections>
+                </button>
+                <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xsxxno.png" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-Wd-Drd">
+                    <rect key="frame" x="20" y="307" width="26" height="22"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="link_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="xEZ-d9-ID4">
+                    <rect key="frame" x="39" y="462" width="17" height="34"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="ETe-We-Jf6">
+                    <rect key="frame" x="0.0" y="453" width="320" height="2"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dianliangbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1M-B5-ZGj">
+                    <rect key="frame" x="192" y="470" width="37" height="16"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chongdian.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-A0-XuV">
+                    <rect key="frame" x="197" y="474" width="27" height="8"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chongdian.png" translatesAutoresizingMaskIntoConstraints="NO" id="edM-1Z-C0l">
+                    <rect key="frame" x="207" y="474" width="6" height="8"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKK-OC-gb0">
+                    <rect key="frame" x="65" y="469" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpJ-JD-i04">
+                    <rect key="frame" x="237" y="469" width="53" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-5" y="461"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="bg.png" width="720" height="1280"/>
+        <image name="btn_check.png" width="72" height="73"/>
+        <image name="btn_close.png" width="72" height="73"/>
+        <image name="btn_start.png" width="266" height="102"/>
+        <image name="check_record_bg.png" width="720" height="228"/>
+        <image name="chongdian.png" width="12" height="15"/>
+        <image name="dianliangbg.png" width="66" height="27"/>
+        <image name="line.png" width="480" height="2"/>
+        <image name="link_off.png" width="38" height="73"/>
+        <image name="lunpan0.png" width="465" height="410"/>
+        <image name="page_check_bg.png" width="720" height="1280"/>
+        <image name="page_check_qiya.png" width="488" height="489"/>
+        <image name="title_bgex.png" width="480" height="66"/>
+        <image name="xsxxno.png" width="48" height="40"/>
+    </resources>
+</document>

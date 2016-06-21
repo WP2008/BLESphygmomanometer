@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OxyAddViewController">
+            <connections>
+                <outlet property="mBtnOk" destination="iQG-46-c6T" id="Syn-1d-xcA"/>
+                <outlet property="mDate" destination="7H1-pW-6Yw" id="O3A-Cz-GNn"/>
+                <outlet property="mDate1" destination="Umi-Rd-CBo" id="Noe-QW-zPV"/>
+                <outlet property="mSate" destination="rmG-JT-ZSH" id="SDt-X9-KvY"/>
+                <outlet property="mShouSuo" destination="1ya-Bq-Vd1" id="c22-yR-Q8F"/>
+                <outlet property="mShouZhang" destination="6TG-Mq-GEV" id="c3x-fm-Aei"/>
+                <outlet property="mTitle" destination="8uP-99-xz9" id="5Lz-DI-9fS"/>
+                <outlet property="mXinLv" destination="iEa-gv-AMi" id="1R8-1h-DS2"/>
+                <outlet property="mlStat" destination="RwU-XL-2Gc" id="khl-qA-g6Y"/>
+                <outlet property="mlshoushuya" destination="wOM-yw-32A" id="w9F-HA-zRC"/>
+                <outlet property="mlshuzhangya" destination="uhZ-3P-Akz" id="67J-dn-uiR"/>
+                <outlet property="mlxinLv" destination="6Qa-ZE-Ikj" id="UBa-lt-cNP"/>
+                <outlet property="view" destination="W4E-fx-C5n" id="cj1-uZ-wcz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="W4E-fx-C5n">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="0o6-9Q-ceS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_bgex.png" translatesAutoresizingMaskIntoConstraints="NO" id="45a-QG-Vcp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                </imageView>
+                <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWH-2r-lPz">
+                    <rect key="frame" x="10" y="25" width="24" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="btn_back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_bak:" destination="-1" eventType="touchUpInside" id="saq-tD-V9D"/>
+                    </connections>
+                </button>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="血压编辑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uP-99-xz9">
+                    <rect key="frame" x="104" y="22" width="133" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H1-pW-6Yw">
+                    <rect key="frame" x="20" y="73" width="185" height="30"/>
+                    <state key="normal" title="2014-04-20 11:21">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umi-Rd-CBo">
+                    <rect key="frame" x="208" y="70" width="103" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="改变时间" backgroundImage="btn_common.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_date:" destination="-1" eventType="touchUpInside" id="vrZ-Q1-6HX"/>
+                    </connections>
+                </button>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTK-QQ-pwO">
+                    <rect key="frame" x="0.0" y="110" width="320" height="2"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="kV4-8I-ill">
+                    <rect key="frame" x="0.0" y="154" width="320" height="2"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="WAH-0x-jC0">
+                    <rect key="frame" x="0.0" y="410" width="320" height="2"/>
+                </imageView>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加入统计" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwU-XL-2Gc">
+                    <rect key="frame" x="20" y="125" width="105" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ya-Bq-Vd1">
+                    <rect key="frame" x="15" y="204" width="90" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lpU-KD-EC2"/>
+                        <outlet property="delegate" destination="-1" id="1T3-UI-5QS"/>
+                    </connections>
+                </pickerView>
+                <pickerView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6TG-Mq-GEV">
+                    <rect key="frame" x="115" y="204" width="90" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pxw-vH-Kad"/>
+                        <outlet property="delegate" destination="-1" id="WuS-Q9-1f6"/>
+                    </connections>
+                </pickerView>
+                <pickerView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEa-gv-AMi">
+                    <rect key="frame" x="215" y="204" width="90" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Gfa-z1-w4E"/>
+                        <outlet property="delegate" destination="-1" id="bWG-xN-BGJ"/>
+                    </connections>
+                </pickerView>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-46-c6T">
+                    <rect key="frame" x="95" y="425" width="130" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="保存" backgroundImage="btn_common.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_ok:" destination="-1" eventType="touchUpInside" id="9T1-II-G90"/>
+                    </connections>
+                </button>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收缩压" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOM-yw-32A">
+                    <rect key="frame" x="27" y="161" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="舒张压" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhZ-3P-Akz">
+                    <rect key="frame" x="131" y="161" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="心率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qa-ZE-Ikj">
+                    <rect key="frame" x="239" y="161" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rmG-JT-ZSH">
+                    <rect key="frame" x="208" y="118" width="104" height="29"/>
+                    <segments>
+                        <segment title="OFF"/>
+                        <segment title="ON"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg.png" width="720" height="1280"/>
+        <image name="btn_back.png" width="73" height="74"/>
+        <image name="btn_common.png" width="150" height="55"/>
+        <image name="line.png" width="480" height="2"/>
+        <image name="title_bgex.png" width="480" height="66"/>
+    </resources>
+</document>
